@@ -1,4 +1,4 @@
-package com.example.administrator.ischool;
+package com.example.administrator.EAider;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

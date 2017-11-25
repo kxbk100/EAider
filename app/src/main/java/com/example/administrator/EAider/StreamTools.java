@@ -1,4 +1,4 @@
-package com.example.administrator.ischool;
+package com.example.administrator.EAider;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
