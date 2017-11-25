@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 渐变 -->
+    <gradient
+        android:angle="270"
+        android:endColor="#F0F3F4"
+        android:startColor="#F0F3F4"
+        />
+    <!-- 设置一下边距,让空间大一点 -->
+    <padding
+        android:left="5dp"
+        android:top="5dp"
+        android:right="5dp"
+        android:bottom="5dp"/>
+    <corners
+        android:bottomLeftRadius="10px"
+        android:bottomRightRadius="10px"
+        android:topLeftRadius="10px"
+        android:topRightRadius="10px" />
+    <!-- 设置一下边距,让空间大一点 -->
+    <padding
+        android:bottom="5dp"
+        android:left="5dp"
+        android:right="5dp"
+        android:top="5dp" />
+
+</shape>

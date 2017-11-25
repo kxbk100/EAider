@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:background="#e0000000"-->
+        <!--android:alpha="0.2"-->
+        <!--/>-->
+    <RelativeLayout
+        android:id="@+id/backline"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        >
+        >
+        <ImageButton
+            android:id="@+id/back"
+            android:onClick="back"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/back"
+            android:scaleType="fitXY"
+            android:background="@drawable/nomaskripple"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_marginRight="18dp"
+            android:layout_marginLeft="18dp"
+            android:alpha="0.5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录"
+            android:textSize="20dp"
+            android:id="@+id/textView"
+            android:layout_toEndOf="@+id/back"
+            android:layout_toRightOf="@+id/back"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/email_login_form"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:alpha="0.7"
+            android:background="@drawable/loginbackground"
+            android:hint="用户名"
+            android:inputType="textEmailAddress"
+            android:paddingTop="8dp"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+
+
+        <EditText
+                android:id="@+id/et_studentId"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="学号"
+                android:inputType="textEmailAddress"
+                android:textSize="18dp"
+                android:background="@drawable/loginbackground"
+                android:layout_marginTop="10dp"
+                android:paddingTop="8dp"
+                android:alpha="0.7"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="密码"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:textSize="18dp"
+                android:paddingTop="8dp"
+                android:radius="15dp"
+                android:background="@drawable/loginbackground"
+                android:layout_marginTop="10dp"
+                android:alpha="0.7"
+                android:textColor="#000000"/>
+
+        <Button
+            android:onClick="seePassword"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/browse"
+            android:layout_marginTop="-35dp"
+            android:layout_marginLeft="220dp"/>
+
+        <Button
+            android:onClick="login"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="登录"
+            android:textStyle="bold"
+            android:background="#00000000"
+            android:textSize="20dp"
+            />
+
+    </LinearLayout>
+    </RelativeLayout>
